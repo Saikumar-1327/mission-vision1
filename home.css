@@ -1,0 +1,65 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f2f2f2;
+}
+
+.mission {
+    padding: 60px 80px;
+}
+
+.mission-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.mission-text {
+    flex: 1;
+}
+
+.mission-text h2 {
+    font-size: 42px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.mission-text .desc {
+    font-size: 16px;
+    line-height: 28px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.stats h3 {
+    font-size: 26px;
+    font-weight: 500;
+    margin-top: 25px;
+}
+
+.stats h3 span {
+    font-size: 16px;
+    font-weight: normal;
+    color: #444;
+}
+
+.stats p {
+    font-size: 15px;
+    color: #555;
+    line-height: 26px;
+    margin-top: 8px;
+}
+
+.mission-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.mission-image img {
+    width: 420px;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 120px 20px 120px 20px;
+
+}
