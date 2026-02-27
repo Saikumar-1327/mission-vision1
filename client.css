@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #393958, #111);
+    color: white;
+}
+
+
+.testimonials {
+    text-align: center;
+    padding: 80px 40px;
+}
+.testimonials P{
+    font-weight: bold;
+}
+
+
+.testimonials h2 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+.testimonials span {
+    color: #ff7a00;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: nowrap;
+}
+
+.card {
+    background: #1a1a2e;
+    width: 320px;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: left;
+    border: 1px solid #0a2a66;
+    box-shadow: 0 0 15px rgba(0, 100, 255, 0.3);
+    transition: 0.3s;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+
+.card h4 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.stars {
+    color: #ff7a00;
+    margin: 12px 0 18px 0;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+
+.card::after {
+    content: ",,";
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    font-size: 150px;
+    color: rgba(255,255,255,0.05);
+}
+
+
+.dots {
+    margin: 50px 10PX 20px 10PX;
+}
+
+.dots span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #777;
+    border-radius: 50%;
+    margin:  6px;
+}
+
+.dots .active {
+    background: white;
+}
+
+
+.bottom-text {
+    margin-top: 20px;
+    color: #ccc;
+    font-size: 16px;
+}
+
+.clients-heading {
+    margin-top: 20px;
+}
