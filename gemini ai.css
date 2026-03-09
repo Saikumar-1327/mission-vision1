@@ -1,0 +1,253 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:radial-gradient(circle at top,#0f172a,#020617);
+    color:white;
+    padding:60px;
+}
+
+.wrapper{
+    max-width:1200px;
+    margin:auto;
+    text-align:center;
+}
+
+h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:#94a3b8;
+    margin-bottom:60px;
+}
+
+
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:40px;
+    align-items:stretch;
+    grid-auto-rows:1fr;
+}
+
+.card{
+    background:#070c16;
+    border-radius:30px;
+    padding:40px;
+    text-align:left;
+    border:1px solid rgba(255,255,255,0.06);
+    transition:.7s;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    height:100%;
+    min-height:420px;
+}
+
+.card:hover{
+    border-color:#6366f1;
+}
+
+
+.preview{
+    height:180px;
+    width:100%;
+    border-radius:25px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:25px;
+    font-size:30px;
+    background:black;
+    flex-shrink:0;
+}
+.preview1{
+    height:180px;
+    width:100%;
+    border-radius:25px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:25px;
+    font-size:30px;
+    background:rgb(242, 241, 241);
+    flex-shrink:0;
+}
+
+
+
+h2{
+    font-size:24px;
+    margin-bottom:15px;
+}
+
+
+
+p{
+    color:#8aa0c6;
+    line-height:1.6;
+    flex-grow:1;
+}
+
+.glow-box{
+    color:#ff7a18;
+    height: 70px;
+    width: 70px;
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 20px;
+    box-shadow:-10px -10px 40px rgb(239, 231, 216);
+}
+
+
+.vip-box{
+    background:linear-gradient(#6366f1,#06b6d4);
+    font-weight:200px;
+    height: 100px;
+    width: 150px;
+    font-size:19px;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 40px;
+    transition:transform .3s ease;
+}
+
+.vip-box:hover{
+transform:skewY(-10deg);
+}
+.image-box{
+    position:relative;
+    overflow:hidden;
+    height: 100px;
+    width: 100px;
+    background:#f3f3f5;
+    background:transparent;
+}
+
+.image-box:hover::before{
+    opacity:1;
+}
+
+
+.scroll-box{
+    height:180px;
+    overflow:hidden;
+}
+
+.scroll-track{
+    display:flex;
+    gap:20px;
+    animation:scrollBoxes 6s linear infinite;
+}
+
+.rect{
+    width:80px;
+    height:60px;
+    border-radius:12px;
+    background:#0f172a;
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+@keyframes scrollBoxes{
+0%{transform:translateX(0)}
+100%{transform:translateX(-200px)}
+}
+
+
+
+.aura-box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.glow-circle{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:white;
+
+    box-shadow:0 0 25px lime;
+
+    animation:auraPulse 6s ease-in-out infinite;
+}
+@keyframes auraPulse{
+
+0%{
+transform:scale(1);
+filter:hue-rotate(0deg);
+}
+
+50%{
+transform:scale(1.25);
+filter:hue-rotate(180deg);
+}
+
+100%{
+transform:scale(1);
+filter:hue-rotate(360deg);
+}
+
+}
+
+
+
+.glass-box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.glass-card{
+    width:140px;
+    height:160px;
+    border-radius:20px;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+
+    position:relative;
+    overflow:hidden;
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    transition:all .3s ease;
+}
+.glass-card:hover{
+    backdrop-filter:blur(0px);
+    -webkit-backdrop-filter:blur(0px);
+    background:rgba(255,255,255,0.02);
+}
+.moving-circle{
+    width:60px;
+    height:60px;
+    background:#ff3b5c;
+    border-radius:50%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    position:absolute;
+    animation:moveCircle 4s ease-in-out infinite alternate;
+}
+.moving-circle:hover{
+    backdrop-filter:blur(0px);
+    -webkit-backdrop-filter:blur(0px);
+    background:rgba(255,255,255,0.02);
+}
+@keyframes moveCircle{
+0%{
+transform:translate(10px,10px);
+}
+100%{
+transform:translate(80px,100px);
+}
+
+}
